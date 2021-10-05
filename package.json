@@ -6,7 +6,7 @@
   "dependencies": {
     "@carbon/grid": "^10.6.0",
     "@carbon/icons-react": "^10.6.1",
-    "axios": "^0.19.0",
+    "axios": "^0.21.2",
     "carbon-components": "^10.6.4",
     "carbon-components-react": "^7.6.4",
     "d3": "^5.12.0",
