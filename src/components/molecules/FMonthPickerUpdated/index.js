@@ -14,19 +14,19 @@ const FMonthPickerUpdated = ({
   disableMonths,
   hideMonths,
 }) => {
-  const [financialYear, setFinancialYear] = useState("2021-2022");
+  const [financialYear, setFinancialYear] = useState("2022-2023");
   const [rangePickerValue, setRangePickerValue] = useState([
-    moment(`2021/04/01`, "YYYY/MM/DD"),
-    moment(`2022/03/31`, "YYYY/MM/DD"),
+    moment(`2022/04/01`, "YYYY/MM/DD"),
+    moment(`2022/05/31`, "YYYY/MM/DD"),
   ]);
 
   const handleSelectYear = (val, arr) => {
     let dates = val.split("-");
     setFinancialYear(val);
-    if (val === "2021-2022") {
+    if (val === "2022-2023") {
       setRangePickerValue([
-        moment(`2021/04/01`, "YYYY/MM/DD"),
-        moment(`2022/03/31`, "YYYY/MM/DD"),
+        moment(`2022/04/01`, "YYYY/MM/DD"),
+        moment(`2022/05/31`, "YYYY/MM/DD"),
       ]);
     } else {
       setRangePickerValue([
@@ -81,7 +81,7 @@ const FMonthPickerUpdated = ({
   return (
     <div className="ml-20">
       <Select
-        defaultValue="2021-2022"
+        defaultValue="2022-2023"
         options={availableFinancialYears}
         onChange={handleSelectYear}
       />
@@ -99,10 +99,10 @@ const FMonthPickerUpdated = ({
             }
           }}
           disabledDate={(current) => {
-            if (financialYear === "2021-2022") {
+            if (financialYear === "2022-2023") {
               return (
-                (current && current < moment("2021/04/01", "YYYY/MM/DD")) ||
-                current > moment("2022/03/31", "YYYY/MM/DD")
+                (current && current < moment("2022/04/01", "YYYY/MM/DD")) ||
+                current > moment("2022/05/31", "YYYY/MM/DD")
               );
             } else {
               return (
