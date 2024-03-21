@@ -45,7 +45,7 @@ export const getExpSchemesData =
         const { months, years, years_short } = yymmdd_ref;
 
         // As there is no data for 2020-21 we need to update code while we update data for it
-        const updatedDateTo = dateTo === "2022-04-31" ? "2022-05-31" : dateTo;
+        const updatedDateTo = dateTo === "2022-04-31" ? "2023-03-31" : dateTo;
 
         const month_week = calcMonthOrWeek(dateFrom, updatedDateTo);
         const fromMonthIndex = parseInt(dateFrom.split("-")[1]) - 1;

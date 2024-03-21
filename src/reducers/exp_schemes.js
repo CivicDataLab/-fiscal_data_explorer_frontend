@@ -9,7 +9,7 @@ import {
 const initialState = {
   initData: null,
   data: { mapData: {}, barChrtData: {}, lineChrtData: {}, tableData: {} },
-  dateRange: ["2022-04-01", "2022-05-31"],
+  dateRange: ["2022-04-01", "2023-03-31"],
   activeFilters: {},
   loading: true,
   error: {},
@@ -49,7 +49,7 @@ export default function (state = initialState, action) {
       return {
         ...state,
         activeFilters: {},
-        dateRange: ["2022-04-01", "2022-05-31"],
+        dateRange: ["2022-04-01", "2023-03-31"],
       };
     default:
       return state;

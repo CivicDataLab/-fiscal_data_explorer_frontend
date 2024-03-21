@@ -102,7 +102,7 @@ const FMonthPickerUpdated = ({
             if (financialYear === "2022-2023") {
               return (
                 (current && current < moment("2022/04/01", "YYYY/MM/DD")) ||
-                current > moment("2022/05/31", "YYYY/MM/DD")
+                current > moment("2023/03/31", "YYYY/MM/DD")
               );
             } else {
               return (
